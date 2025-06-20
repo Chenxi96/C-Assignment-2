@@ -75,7 +75,9 @@ public class J2Controller : ControllerBase
     /// Sources: https://cemc.uwaterloo.ca/sites/default/files/documents/2021/2021CCCJrProblemSet.html
     /// Problem J2: Silent Auction
     /// 
-    /// Receives a HTTP request with a query parameter. Sends a response with the query parameter with the highest bidder name.
+    /// Receives a HTTP request with a query parameter string that takes name buyer and amount they are willing to pay (Positive integer and not more than 2000), 
+    /// each name and pay are separated by a comma, sends a response with the query parameter with the highest bidder name.
+    /// The order of the input is the order in which bids were placed.
     /// </summary>
     /// <param name="biddersAmounts">name and amount of bid</param>
     /// <returns> A HTTP Response with the auction winner</returns>

@@ -15,9 +15,9 @@ public class J3Controller : ControllerBase
     /// value changed. The query parameter should have 5 numbers as a string divided my commas.
     /// e.g. 12345,54321,13245 (first line will not begin with 00)
     /// The first two digits represent the direction to turn:
-    /// Sum is odd, the direction is left
-    /// Sum is even and the sum is not zero, the direction is right
-    /// Sum is zero, the direction is the same as previous instruction
+    /// - Sum is odd, the direction is left
+    /// - Sum is even and also the sum is not zero, the direction is right
+    /// - Sum is zero, the direction is the same as previous instruction
     /// 
     /// The remaining three digits will represent the number of steps to take which will always be at
     /// least 100.
